@@ -30,19 +30,24 @@
 
 a {
   text-decoration: none;
-  color: blue;
 }
 
 .links {
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: blue;
   text-decoration: none;
   border-radius: 5px;
   padding: 3px;
+  font-size: bold;
 }
 
-.a:hover {
+.ativo {
+  background-color: blue;
+  color: white;
+}
+
+.links:hover {
   background-color: blue;
   color: white;
   border-radius: 5px;
@@ -94,7 +99,7 @@ article {
 }
 
 button {
-  width: 70px;
+  width: 75px;
   height: 30px;
   border-radius: 10px;
   display: flex;
