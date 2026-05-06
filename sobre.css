@@ -59,88 +59,50 @@ hr {
   border: none;
   border: 1px solid blue;
 }
-.caixa {
-  background-color: gray;
-  color: white;
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.bomba {
+main {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.caixa2 {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 450px;
-  gap: 70px;
+  height: calc(100vh - 40px);
+  background-color: c;
 }
 
-.caixas {
+#caixa {
   display: flex;
-  gap: 40px;
-}
-
-article {
-  display: flex;
-  box-shadow: 0px 2px 2px 0px gray;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  height: 300px;
-  width: 400px;
-  text-align: center;
-  overflow: hidden;
-  object-fit: cover;
-  gap: 5px;
-}
-
-button {
-  width: 75px;
-  height: 30px;
-  border-radius: 10px;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  color: white;
-  background-color: green;
+  background-color: white;
 }
 
-h2,
-h3 {
+h2 {
   text-align: center;
 }
 
-.caixa3 {
-  height: 230px;
+main {
   display: flex;
-  flex-direction: column;
-  gap: 0;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px);
+  background-color: #dfdfdf;
 }
 
-.siga {
-  background-color: gray;
-  height: 180px;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 780px;
+  border: 1px solid #ccc;
   gap: 20px;
+  background-color: white;
+  border-radius: 5px;
 }
 
-.imgs {
-  display: flex;
-  justify-content: space-around;
-  width: 150px;
+p {
+  text-align: center;
+  width: 94%;
 }
 
 .fim {
