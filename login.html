@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <script src="link.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header> 
+      <div class="flex w-full h-14 justify-around items-center gap-350">
+        <div class="flex w-12 h-8"><img src="./assets/Windows.png" alt=" " /></div>
+        <div class="flex w-75 h-7.5 justify-between  items-center">
+            <a href="./index.html"><div class="links">Home</div></a>
+          <a href="./sobre.html"><div class="links">Sobre</div></a>
+          <a href="./contato.html"><div class="links">Contato</div></a>
+          <a href="./login.html"><div class="links login">Login</div></a>
+      </div>
+    </header>
+    <hr>
+    <main class="flex h-[calc(100vh-56px)] items-center justify-center">
+      <form
+        class="flex h-87.5] w-100 flex-col items-center justify-center gap-7 shadow"
+      >
+        <img src="assets/Windows.png" alt="" class="h-7.5 w-auto" />
+        <h2 class="text-blue-600 font-bold text-2xl ">LOGIN</h2>
+        <input
+          type="text"
+          class="h-7 w-[70%] shadow placeholder:px-4 placeholder:py-2"
+          placeholder="Digite seu e-mail"
+          id="email"
+        />
+        <input
+          type="password"
+          class="h-7 w-[70%] shadow placeholder:px-4 placeholder:py-2"
+          placeholder="Digite sua senha"
+          id="senha"
+        />
+        <button class="h-7 w-[70%] bg-blue-600 text-white shadow text-center">Acessar</button>
+    </form>
+    </main>
+     <div class="fim">
+          <p>
+            &copy; 2026 Hidráulica Pro Brasil - Todos os direitos reservados
+          </p>
+        </div>
+      </div>
+  </body>
+</html>
