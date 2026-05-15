@@ -4,28 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/output.css" />
-    <link rel="stylesheet" href="./global.css" />
     <script src="link.js" defer></script>
-    <title>Document</title>
+    <title>Login - Hidráulica Pro</title>
   </head>
   <body>
-    <header> 
-      <div class="flex w-full h-14 justify-around items-center gap-350">
-        <div class="flex w-12 h-8"><img src="./assets/Windows.png" alt=" " /></div>
-        <div class="flex w-75 h-7.5 justify-between  items-center">
-            <a href="./index.html"><div class="links">Home</div></a>
-          <a href="./sobre.html"><div class="links">Sobre</div></a>
-          <a href="./contato.html"><div class="links">Contato</div></a>
-          <a href="./login.html"><div class="links login">Login</div></a>
+    <header>
+      <div class="flex h-14 w-full items-center justify-between px-6">
+        <div class="flex h-8 w-12">
+          <img src="./assets/Windows.png" alt="Logo" />
+        </div>
+        <div class="flex h-7.5 w-75 items-center justify-between">
+          <a href="./index.html"
+            ><span
+              class="flex cursor-pointer items-center rounded px-2 py-1 text-sm font-bold text-blue-600 transition-all hover:scale-110 hover:bg-blue-600 hover:text-white"
+              >Home</span
+            ></a
+          >
+          <a href="./sobre.html"
+            ><span
+              class="flex cursor-pointer items-center rounded px-2 py-1 text-sm font-bold text-blue-600 transition-all hover:scale-110 hover:bg-blue-600 hover:text-white"
+              >Sobre</span
+            ></a
+          >
+          <a href="./contato.html"
+            ><span
+              class="flex cursor-pointer items-center rounded px-2 py-1 text-sm font-bold text-blue-600 transition-all hover:scale-110 hover:bg-blue-600 hover:text-white"
+              >Contato</span
+            ></a
+          >
+          <a href="./login.html"
+            ><span
+              class="flex cursor-pointer items-center rounded bg-green-600 px-2 py-1 text-sm font-bold text-white transition-all hover:scale-110 hover:bg-green-700"
+              >Login</span
+            ></a
+          >
+        </div>
       </div>
     </header>
-    <hr>
+    <hr class="border border-blue-600" />
     <main class="flex h-[calc(100vh-56px)] items-center justify-center">
       <form
-        class="flex h-87.5] w-100 flex-col items-center justify-center gap-7 shadow"
+        class="flex h-87.5 w-100 flex-col items-center justify-center gap-7 shadow"
       >
-        <img src="assets/Windows.png" alt="" class="h-7.5 w-auto" />
-        <h2 class="text-blue-600 font-bold text-2xl ">LOGIN</h2>
+        <img src="assets/Windows.png" alt="Logo" class="h-7.5 w-auto" />
+        <h2 class="text-2xl font-bold text-blue-600">LOGIN</h2>
         <input
           type="text"
           class="h-7 w-[70%] shadow placeholder:px-4 placeholder:py-2"
@@ -38,14 +60,20 @@
           placeholder="Digite sua senha"
           id="senha"
         />
-        <button class="h-7 w-[70%] bg-blue-600 text-white shadow text-center">Acessar</button>
-    </form>
+        <button
+          type="submit"
+          class="h-7 w-[70%] cursor-pointer bg-blue-600 text-center text-white shadow"
+        >
+          Acessar
+        </button>
+      </form>
     </main>
-     <div class="fim">
-          <p>
-            &copy; 2026 Hidráulica Pro Brasil - Todos os direitos reservados
-          </p>
-        </div>
+    <footer>
+      <div
+        class="flex h-12.5 w-full items-center justify-center bg-black text-white"
+      >
+        <p>&copy; 2026 Hidráulica Pro Brasil - Todos os direitos reservados</p>
       </div>
+    </footer>
   </body>
 </html>

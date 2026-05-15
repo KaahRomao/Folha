@@ -5,32 +5,34 @@ const elemento = {
   button: document.querySelector("button"),
 };
 
-const dadosDigitados = {
-  email: " ",
-  senha: " ",
+const admin = {
+  email: "kaueromao1989@gmail.com",
+  senha: "Kaue050577!",
 };
 
-elemento.form.addEventListener(
-  "submit",
-  (event) => {
-    event.preventDefault;
-    getDadosDigitados(elemento.email.value, elemento.senha.value);
-  },
+const dadosDigitados = {
+  email: "",
+  senha: "",
+};
 
-  function getDadosDigitados(email, senha) {
-    dadosDigitados.email = email;
-    dadosDigitados.senha = senha;
-  },
-);
+function getDadosDigitados(email, senha) {
+  dadosDigitados.email = email;
+  dadosDigitados.senha = senha;
+}
 
-// document.querySelectorAll(".button").forEach((button) => {
-//   button.addEventListener("click", () => {
-//     alert("Saiba mais");
-//   });
-// });
+elemento.form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  getDadosDigitados(elemento.email.value, elemento.senha.value);
+  console.log(dadosDigitados);
 
-// document.querySelectorAll(".botao").forEach((button) => {
-//   button.addEventListener("click", () => {
-//     alert("Mensagem enviada com sucesso!s");
-//   });
-// });
+  if (
+    dadosDigitados.email == admin.email &&
+    dadosDigitados.senha == admin.senha
+  ) {
+    setTimeout(() => {
+      window.location.href = "./produtos.html";
+    }, 1000);
+  } else {
+    console.log("Email ou Senha incorretos. Tente Novamente!");
+  }
+});

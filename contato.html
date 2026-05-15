@@ -1,38 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./contato.css">
-    <script src="link.js"></script>
-<body>
-    <header>  <div class="cabecalho">
-        <div class="logo"><img src="./assets/Windows.png" alt=" " /></div>
-        <div class="botoes">
-            <a href="./index.html"><div class="links">Home</div></a>
-          <a href="./sobre.html"><div class="links">Sobre</div></a>
-          <a href="./contato.html"><div class="links ativo">Contato</div></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <script src="link.js" defer></script>
+    <title>Contato - Hidráulica Pro</title>
+  </head>
+  <body>
+    <header>
+      <div class="flex h-14 w-full items-center justify-between px-6">
+        <div class="flex h-8 w-12">
+          <img src="./assets/Windows.png" alt="Logo" />
+        </div>
+        <div class="flex h-7.5 w-75 items-center justify-between">
+          <a href="./index.html"
+            ><span
+              class="flex cursor-pointer items-center rounded px-2 py-1 text-sm font-bold text-blue-600 transition-all hover:scale-110 hover:bg-blue-600 hover:text-white"
+              >Home</span
+            ></a
+          >
+          <a href="./sobre.html"
+            ><span
+              class="flex cursor-pointer items-center rounded px-2 py-1 text-sm font-bold text-blue-600 transition-all hover:scale-110 hover:bg-blue-600 hover:text-white"
+              >Sobre</span
+            ></a
+          >
+          <a href="./contato.html"
+            ><span
+              class="flex cursor-pointer items-center rounded bg-blue-600 px-2 py-1 text-sm font-bold text-white transition-transform hover:scale-110"
+              >Contato</span
+            ></a
+          >
+          <a href="./login.html"
+            ><span
+              class="flex cursor-pointer items-center rounded bg-green-600 px-2 py-1 text-sm font-bold text-white transition-all hover:scale-110 hover:bg-green-700"
+              >Login</span
+            ></a
+          >
+        </div>
       </div>
     </header>
-    <hr>
-    <main>
-        <div id="caixa">
-            <div class="form">
-                <h2>Fale Conosco</h2>
-                <input type="text" placeholder="Seu Nome">
-                <input type="text" placeholder="Seu Email">
-                <textarea name="mensagem" id="mensagem" placeholder="Como podemos ajudar?"></textarea>
-                <button class="botao" onclick="alert('Enviada com sucesso')">Enviar mensagem</button>
-            </div>
+    <hr class="border border-blue-600" />
+    <main
+      class="flex h-[calc(100vh-40px)] items-center justify-center bg-[#dfdfdf]"
+    >
+      <div class="flex items-center justify-center bg-white">
+        <div
+          class="flex h-100 w-137.5 flex-col items-center justify-around gap-0.5 border border-[#ccc]"
+        >
+          <h2 class="text-center text-xl font-semibold">Fale Conosco</h2>
+          <input
+            type="text"
+            placeholder="Seu Nome"
+            class="h-10 w-[70%] rounded border border-[#ccc] placeholder:px-1"
+          />
+          <input
+            type="text"
+            placeholder="Seu Email"
+            class="h-10 w-[70%] rounded border border-[#ccc] placeholder:px-1"
+          />
+          <textarea
+            name="mensagem"
+            id="mensagem"
+            placeholder="Como podemos ajudar?"
+            class="h-25 w-[70%] resize-none rounded border border-[#ccc] placeholder:px-1 placeholder:py-1"
+          ></textarea>
+          <button
+            onclick="alert('Enviada com sucesso')"
+            class="h-10 w-[70%] cursor-pointer rounded border-none bg-blue-600 text-white"
+          >
+            Enviar mensagem
+          </button>
         </div>
+      </div>
     </main>
     <footer>
-        <div class="fim">
-          <p>
-            &copy; 2026 Hidráulica Pro Brasil - Todos os direitos reservados
-          </p>
-        </div>
+      <div
+        class="flex h-12.5 w-full items-center justify-center bg-black text-white"
+      >
+        <p>&copy; 2026 Hidráulica Pro Brasil - Todos os direitos reservados</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
