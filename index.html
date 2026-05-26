@@ -1,161 +1,103 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/output.css" />
-    <title>Hidráulica Pro</title>
-  </head>
-  <body>
-    <header>
-      <div class="flex h-14 w-full items-center justify-between px-6">
-        <div class="flex h-8 w-12">
-          <img src="./assets/Windows.png" alt="Logo" />
-        </div>
-        <div class="flex h-7.5 w-75 items-center justify-between">
-          <a href="./index.html"
-            ><span
-              class="flex cursor-pointer items-center rounded bg-blue-600 px-2 py-1 text-sm font-bold text-white transition-transform hover:scale-110"
-              >Home</span
-            ></a
-          >
-          <a href="./sobre.html"
-            ><span
-              class="flex cursor-pointer items-center rounded px-2 py-1 text-sm font-bold text-blue-600 transition-all hover:scale-110 hover:bg-blue-600 hover:text-white"
-              >Sobre</span
-            ></a
-          >
-          <a href="./contato.html"
-            ><span
-              class="flex cursor-pointer items-center rounded px-2 py-1 text-sm font-bold text-blue-600 transition-all hover:scale-110 hover:bg-blue-600 hover:text-white"
-              >Contato</span
-            ></a
-          >
-          <a href="./login.html"
-            ><span
-              class="flex cursor-pointer items-center rounded bg-green-600 px-2 py-1 text-sm font-bold text-white transition-all hover:scale-110 hover:bg-green-700"
-              >Login</span
-            ></a
-          >
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/output.css" />
+  <title>Hidráulica Pro</title>
+</head>
+
+<body>
+  <header>
+    <div class="flex h-14 w-full items-center justify-between px-6">
+      <div class="flex h-8 w-12">
+        <img src="./assets/img/Windows.png" alt="Logo" width="80px" height="80px" />
       </div>
-    </header>
-    <hr class="border border-blue-600" />
-    <main>
-      <div
-        class="flex h-75 w-full items-center justify-center bg-gray-500 text-white"
-      >
-        <div class="flex items-center justify-center">
-          <h1 class="text-4xl font-bold">Bombas Hidráulicas</h1>
-        </div>
+      <div class="flex h-7.5 w-75 items-center justify-between">
+        <a href="./index.html"><span
+            class="flex cursor-pointer items-center rounded bg-blue-600 px-2 py-1 text-sm font-bold text-white transition-transform hover:scale-110">Home</span></a>
+        <a href="./sobre.html"><span
+            class="flex cursor-pointer items-center rounded px-2 py-1 text-sm font-bold text-blue-600 transition-all hover:scale-110 hover:bg-blue-600 hover:text-white">Sobre</span></a>
+        <a href="./contato.html"><span
+            class="flex cursor-pointer items-center rounded px-2 py-1 text-sm font-bold text-blue-600 transition-all hover:scale-110 hover:bg-blue-600 hover:text-white">Contato</span></a>
+        <a href="./login.html"><span
+            class="flex cursor-pointer items-center rounded bg-green-600 px-2 py-1 text-sm font-bold text-white transition-all hover:scale-110 hover:bg-green-700">Login</span></a>
       </div>
-      <div class="flex h-112.5 flex-col items-center justify-center gap-17.5">
-        <div class="flex flex-col items-center gap-2">
-          <h2 class="text-center text-2xl font-semibold">Nossas soluções</h2>
-          <p class="text-center">
-            Trabalhamos com o que há de mais moderno em sistemas de bombeamento
-            de água.
+    </div>
+  </header>
+  <hr class="border border-blue-600" />
+  <main>
+    <div class="flex h-75 w-full items-center justify-center bg-gray-500 text-white">
+      <div class="flex items-center justify-center">
+        <h1 class="text-4xl font-bold">Bombas Hidráulicas</h1>
+      </div>
+    </div>
+    <div class="flex h-112.5 flex-col items-center justify-center gap-17.5">
+      <div class="flex flex-col items-center gap-2">
+        <h2 class="text-center text-2xl font-semibold">Nossas soluções</h2>
+        <p class="text-center">
+          Trabalhamos com o que há de mais moderno em sistemas de bombeamento
+          de água.
+        </p>
+      </div>
+      <div class="flex gap-10">
+        <article
+          class="flex h-75 w-100 flex-col items-center justify-center gap-1 overflow-hidden rounded-xl text-center shadow-md">
+          <img src="./assets/img/1.jpg" alt="Alta pressão" width="200px" height="200px" />
+          <h3 class="font-semibold">Alta pressão</h3>
+          <p class="px-4 text-sm">
+            Ideal para prédios e sistemas que exigem força total.
           </p>
-        </div>
-        <div class="flex gap-10">
-          <article
-            class="flex h-75 w-100 flex-col items-center justify-center gap-1 overflow-hidden rounded-xl text-center shadow-md"
-          >
-            <img
-              src="./assets/1.jpg"
-              alt="Alta pressão"
-              width="200px"
-              height="200px"
-            />
-            <h3 class="font-semibold">Alta pressão</h3>
-            <p class="px-4 text-sm">
-              Ideal para prédios e sistemas que exigem força total.
-            </p>
-            <button
-              onclick="alert('Saiba mais')"
-              class="flex h-7.5 w-24 cursor-pointer items-center justify-center rounded-lg bg-green-600 text-white"
-            >
-              Saiba mais
-            </button>
-          </article>
-          <article
-            class="flex h-75 w-100 flex-col items-center justify-center gap-1 overflow-hidden rounded-xl text-center shadow-md"
-          >
-            <img
-              src="./assets/2.jpg"
-              alt="Submersíveis"
-              width="200px"
-              height="200px"
-            />
-            <h3 class="font-semibold">Submersíveis</h3>
-            <p class="px-4 text-sm">
-              Bombas projetadas para trabalhar dentro da água.
-            </p>
-            <button
-              onclick="alert('Saiba mais')"
-              class="flex h-7.5 w-24 cursor-pointer items-center justify-center rounded-lg bg-green-600 text-white"
-            >
-              Saiba mais
-            </button>
-          </article>
-          <article
-            class="flex h-75 w-100 flex-col items-center justify-center gap-1 overflow-hidden rounded-xl text-center shadow-md"
-          >
-            <img
-              src="./assets/2.jpg"
-              alt="Submersíveis"
-              width="200px"
-              height="200px"
-            />
-            <h3 class="font-semibold">Manutenção</h3>
-            <p class="px-4 text-sm">
-              Suporte técnico especializado para todos os modelos.
-            </p>
-            <button
-              onclick="alert('Saiba mais')"
-              class="flex h-7.5 w-24 cursor-pointer items-center justify-center rounded-lg bg-green-600 text-white"
-            >
-              Saiba mais
-            </button>
-          </article>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="h-57.2 flex flex-col">
-        <div
-          class="flex h-45 flex-col items-center justify-center gap-5 bg-gray-500"
-        >
-          <h3 class="font-semibold text-white">Siga nossas redes sociais</h3>
-          <div class="flex w-37.5 justify-around">
-            <img
-              src="./assets/Facebook_logo_(square).png"
-              alt="Facebook"
-              width="30"
-              height="30"
-            />
-            <img
-              src="./assets/Instagram_icon.png"
-              alt="Instagram"
-              width="30"
-              height="30"
-            />
-            <img
-              src="./assets/Youtube_logo.png"
-              alt="Youtube"
-              width="30"
-              height="30"
-            />
-          </div>
-        </div>
-        <div
-          class="flex h-12.5 w-full items-center justify-center bg-black text-white"
-        >
-          <p>
-            &copy; 2026 Hidráulica Pro Brasil - Todos os direitos reservados
+          <button onclick="alert('Saiba mais')"
+            class="flex h-7.5 w-24 cursor-pointer items-center justify-center rounded-lg bg-green-600 text-white">
+            Saiba mais
+          </button>
+        </article>
+        <article
+          class="flex h-75 w-100 flex-col items-center justify-center gap-1 overflow-hidden rounded-xl text-center shadow-md">
+          <img src="./assets/img/2.jpg" alt="Submersíveis" width="200px" height="200px" />
+          <h3 class="font-semibold">Submersíveis</h3>
+          <p class="px-4 text-sm">
+            Bombas projetadas para trabalhar dentro da água.
           </p>
+          <button onclick="alert('Saiba mais')"
+            class="flex h-7.5 w-24 cursor-pointer items-center justify-center rounded-lg bg-green-600 text-white">
+            Saiba mais
+          </button>
+        </article>
+        <article
+          class="flex h-75 w-100 flex-col items-center justify-center gap-1 overflow-hidden rounded-xl text-center shadow-md">
+          <img src="./assets/img/3.jpg" alt="Manutenção" width="200px" height="200px" />
+          <h3 class="font-semibold">Manutenção</h3>
+          <p class="px-4 text-sm">
+            Suporte técnico especializado para todos os modelos.
+          </p>
+          <button onclick="alert('Saiba mais')"
+            class="flex h-7.5 w-24 cursor-pointer items-center justify-center rounded-lg bg-green-600 text-white">
+            Saiba mais
+          </button>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="h-57.2 flex flex-col">
+      <div class="flex h-45 flex-col items-center justify-center gap-5 bg-gray-500">
+        <h3 class="font-semibold text-white">Siga nossas redes sociais</h3>
+        <div class="flex w-37.5 justify-around">
+          <img src="./assets/img/Facebook_icon.png" alt="Facebook" width="30" height="30" />
+          <img src="./assets/img/Instagram_icon.png" alt="Instagram" width="30" height="30" />
+          <img src="./assets/img/Youtube_logo.png" alt="Youtube" width="30" height="30" />
         </div>
       </div>
-    </footer>
-  </body>
+      <div class="flex h-12.5 w-full items-center justify-center bg-black text-white">
+        <p>
+          &copy; 2026 Hidráulica Pro Brasil - Todos os direitos reservados
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
